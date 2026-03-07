@@ -674,4 +674,11 @@
 
     fetch(SHEETS_URL, { method: 'POST', body: params })
       .then(() => {
-        docume
+        document.getElementById('sponsorForm').style.display = 'none';
+        document.getElementById('sponsorSuccess').style.display = 'block';
+      })
+      .catch(() => alert('There was a problem submitting. Please email us directly.'));
+  }
+</script>
+</body>
+</html>
